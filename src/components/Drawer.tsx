@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Drawer } from 'antd';
 import RenderContent from "./RenderContent.tsx";
-import {usePopUpContext} from "../PopUpProvider.tsx";
+import {usePopUpContext} from "../PopupProvider.tsx";
+
 
 const App: React.FC = () => {
     const [open, setOpen] = React.useState<boolean>(false);
@@ -39,6 +40,7 @@ const App: React.FC = () => {
                 size={'large'}
                 open={open}
                 loading={loading}
+                width={1000}
                 onClose={() => setOpen(false)}
             >
                 <Button type="primary" style={{ marginBottom: 16 }} onClick={showLoading}>

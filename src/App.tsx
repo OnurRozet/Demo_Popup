@@ -1,5 +1,5 @@
 import Drawer from "./components/Drawer.tsx";
-import {PopUpProvider} from "./PopUpProvider.tsx";
+import {PopUpProvider} from "./PopupProvider.tsx";
 
 function App() {
 
